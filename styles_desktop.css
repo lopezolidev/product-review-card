@@ -1,0 +1,33 @@
+body {
+    justify-content: center;
+    gap: 8rem;
+}
+
+main {
+    height: 50vh;
+    width: 36vw;
+    flex-direction: row;
+}
+
+.image-container {
+    height: 100%;
+    width: 50%;
+}
+
+.image-container .image {
+    background-image: url('./images/image-product-desktop.jpg');
+    border-top-left-radius: 1rem;
+    border-bottom-left-radius: 1rem;
+    border-top-right-radius: 0rem;
+}
+
+.text-container {
+    height: 100%;
+    width: 50%;
+    border-bottom-left-radius: 0rem;
+    border-top-right-radius: 1rem;
+}
+
+footer {
+    flex-direction: row;
+}

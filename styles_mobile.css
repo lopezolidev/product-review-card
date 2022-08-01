@@ -6,6 +6,7 @@
 
 :root {
     --Dark-cyan: hsl(158, 36%, 37%);
+    --Very-dark-cyan: hsl(158, 37%, 20%);
     --Cream: hsl(30, 38%, 92%);
     --Very-dark-blue: hsl(212, 21%, 14%);
     --Dark-grayish-blue: hsl(228, 12%, 48%);
@@ -79,16 +80,18 @@ main {
 .titles h3 {
     font-weight: var(--Paragraph-size);
     text-transform: uppercase;
+    color: var(--Dark-grayish-blue);
 }
 
 .titles h1 {
-    font-size: 2.8rem;
+    font-size: var(--Title-size);
     text-align: left;
 }
 
 .titles p {
-    font-size: 1.2rem;
+    font-size: var(--Paragraph-size);
     line-height: 2.4rem;
+    color: var(--Dark-grayish-blue);
 }
 
 .prices {
@@ -97,3 +100,117 @@ main {
     gap: 2rem;
     width: 100%;
 }
+
+.prices .a-text{
+    font-size: var(--Title-size);
+    color: var(--Dark-cyan);
+}
+
+.prices .b-text {
+    font-size: var(--Paragraph-size);
+    color: var(--Dark-grayish-blue);
+}
+
+.button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    background-color: var(--Dark-cyan);
+    height: 5rem;
+    width: 100%;
+    border-radius: 1rem;
+    transition: all .4s ease-in-out;
+}
+
+.button:hover {
+    background-color: var(--Very-dark-cyan);
+    cursor: pointer;
+}
+
+.button span {
+    background-image: url('./images/icon-cart.svg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 2rem;
+    width: 2rem;
+}
+
+.button p {
+    font-size: var(--Paragraph-size);
+    font-weight: var(--Bold-weight);
+    color: var(--White);
+}
+
+footer {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+}
+
+footer p {
+    font-size: 1.2rem;
+    font-weight: var(--Medium-weight);
+    color: var(--Dark-grayish-blue);
+    display: flex;
+    justify-content: center;
+    align-items: baseline;
+    gap: 1rem;
+}
+
+footer a {
+    text-decoration: none;
+    font-weight: var(--Bold-weight);
+    color: var(--White);
+    background-color: var(--Dark-cyan);
+    display: block;
+    padding: 0.6rem;
+    text-align: center;
+    border-radius: 1rem;
+    transition: all .4s ease-in-out;
+}
+
+footer a:hover {
+    background-color: var(--Very-dark-cyan);
+}
+
+/* Media queries */
+/* 
+@media (min-width: 1000px) {
+    body {
+        justify-content: center;
+        gap: 8rem;
+    }
+
+    main {
+        height: 50vh;
+        width: 64vw;
+        flex-direction: row;
+    }
+
+    .image-container {
+        height: 100%;
+        width: 100%;
+    }
+
+    .image-container .image {
+        background-image: url('./images/image-product-desktop.jpg');
+        border-top-left-radius: 1rem;
+        border-bottom-left-radius: 1rem;
+        border-top-right-radius: 0rem;
+    }
+
+    .text-container {
+        height: 100%;
+        border-bottom-left-radius: 0rem;
+        border-top-right-radius: 1rem;
+    }
+
+    footer {
+        flex-direction: row;
+    }
+} */
