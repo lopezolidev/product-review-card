@@ -81,17 +81,21 @@ main {
     font-weight: var(--Paragraph-size);
     text-transform: uppercase;
     color: var(--Dark-grayish-blue);
+    font-family: 'Montserrat', sans-serif;
 }
 
 .titles h1 {
     font-size: var(--Title-size);
     text-align: left;
+    font-family: 'Fraunces', serif;
+    font-weight: 700;
 }
 
 .titles p {
     font-size: var(--Paragraph-size);
     line-height: 2.4rem;
     color: var(--Dark-grayish-blue);
+    font-family: 'Montserrat', sans-serif;
 }
 
 .prices {
@@ -104,11 +108,14 @@ main {
 .prices .a-text{
     font-size: var(--Title-size);
     color: var(--Dark-cyan);
+    font-family: 'Fraunces', serif;
 }
 
 .prices .b-text {
     font-size: var(--Paragraph-size);
     color: var(--Dark-grayish-blue);
+    font-family: 'Montserrat', sans-serif;
+    text-decoration: line-through
 }
 
 .button {
@@ -141,6 +148,8 @@ main {
     font-size: var(--Paragraph-size);
     font-weight: var(--Bold-weight);
     color: var(--White);
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
 }
 
 footer {
